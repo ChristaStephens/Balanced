@@ -50,7 +50,7 @@ const restartSong = song => {
 timeSelect.forEach(option => {
     option.addEventListener("click", function () {
         fakeDuration = this.getAttribute("data-time");
-        timeDisplay.textContent = `${Math.floor(fakeDuration / 60)}:${Math.floor(
+        timeDisplay.textContent = `${Math.floor(fakeDuration / 60)}:${"0" + Math.floor(
             fakeDuration % 60
         )}`;
     });
