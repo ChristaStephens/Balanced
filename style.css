@@ -52,7 +52,7 @@ button {
     font-size: 20px;
     color: #fbfbfb;
     padding: 15px 25px;
-    background: linear-gradient(to left, #A4508B, #5F0A87);
+    background: linear-gradient(to left, #5F0A87, #A4508B);
     border: none;
     border-radius: 10px;
     cursor: pointer;
