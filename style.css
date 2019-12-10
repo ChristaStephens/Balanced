@@ -15,15 +15,18 @@ body {
     font-family: 'Lora', serif;
 }
 
-button {
+input[type="submit"] {
     font-family: "Krub", sans-serif;
   }
 
+
   header {
     height: 100vh;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    background-size: cover;
     display: flex;
     width: 50%;
     margin-left: 50%;
@@ -48,7 +51,7 @@ button {
     font-size: 64px;
   }
 
-  header button {
+  input[type="submit"] {
     font-size: 20px;
     color: #fbfbfb;
     padding: 15px 25px;
@@ -101,16 +104,16 @@ header img {
 
 .sound-picker button {
   border: none;
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
   padding: 30px;
   border-radius: 50%;
 }
 .sound-picker button:nth-child(1) {
-  background: #4972a1;
+  background: #5F0A87;
 }
 .sound-picker button:nth-child(2) {
-  background: #a14f49;
+  background: #A4508B;
 }
 .sound-picker button img {
   height: 100%;
@@ -123,7 +126,7 @@ header img {
 
 .player-container {
   position: relative;
-  height: 80%;
+  height: 40%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -140,7 +143,7 @@ header img {
   pointer-events: none;
 }
 .player-container svg circle {
-  transition: all 0.2s ease-in-out;
+  /* transition: all 0.2s ease-in-out; */
 }
 .time-display {
   color: white;
@@ -150,6 +153,8 @@ header img {
 }
 
 video {
+  height: 300vh;
+  display: flex;
   position: fixed;
   top: 0%;
   left: 0%;
