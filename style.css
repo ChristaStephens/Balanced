@@ -105,7 +105,7 @@ header img {
   border: none;
   height: 100px;
   width: 100px;
-  padding: 30px;
+  padding: 20px;
   border-radius: 50%;
 }
 .sound-picker button:nth-child(1) {
@@ -114,13 +114,18 @@ header img {
 .sound-picker button:nth-child(2) {
   background: #A4508B;
 }
+
+.sound-picker button:nth-child(3) {
+  background: #B91372;
+}
+
 .sound-picker button img {
   height: 100%;
 }
 
 .time-select button:hover {
   background: white;
-  color: black;
+  color: #5F0A87;
 }
 
 .player-container {
@@ -137,7 +142,7 @@ header img {
   position: absolute;
   height: 50%;
   top: 35%;
-  left: 48%;
+  left: 49%;
   transform: translate(-50%, -50%) rotate(-90deg);
   pointer-events: none;
 }
@@ -152,7 +157,7 @@ header img {
 }
 
 video {
-bottom: 0%;
+  bottom: 0%;
   position: fixed;
   top: 0%;
   left: 0%;

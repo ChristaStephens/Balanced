@@ -14,7 +14,7 @@ const timeDisplay = document.querySelector(".time-display");
 const outlineLength = outline.getTotalLength();
 //Duration
 const timeSelect = document.querySelectorAll(".time-select button");
-let fakeDuration = 600;
+let fakeDuration = 300;
 
 outline.style.strokeDashoffset = outlineLength;
 outline.style.strokeDasharray = outlineLength;
@@ -43,7 +43,7 @@ replay.addEventListener("click", function () {
 const restartSong = song => {
     let currentTime = song.currentTime;
     song.currentTime = 0;
-    console.log("ciao")
+    // console.log("ciao")
 
 }
 
