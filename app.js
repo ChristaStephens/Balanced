@@ -75,7 +75,7 @@ play.addEventListener("click", function () {
 
 const restartSong = song => {
     let currentTime = song.currentTime;
-    song.currentTime = 0;
+    song.currentTime = 0.0;
     // console.log("ciao")
 
 }
