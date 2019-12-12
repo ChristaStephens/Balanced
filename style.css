@@ -30,11 +30,18 @@ input[type="submit"] {
 
 }
 
+.moon{
+  transform: translate(-50%, 0%);
+  z-index: -2;
+  height: 1px;
+}
+
 
 .description h1{
   padding: 30px;
   font-size: 64px;
   position: absolute;
+  color: #5F0A87;
 }
 
 .description p{
@@ -42,6 +49,7 @@ input[type="submit"] {
   /* margin: 20px 0px; */
   font-size: 30px;
   padding: 40px;
+  text-indent: 50px;
 
 
 }
@@ -67,8 +75,6 @@ input[type="submit"] {
   border-radius: 10px;
   cursor: pointer;
   margin: 20px 0px;
-
-
 }
 
 
@@ -231,10 +237,10 @@ video {
 }
 
 .back{
-  background: #cedce7;
-  background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-  background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-  background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+  background: #9E768F;
+  background: -webkit-linear-gradient(45deg,  #9E768F 0%,#9FA4C4 100%);
+  background: -o-linear-gradient(45deg,  #9E768F 0%,#9FA4C4 100%);
+  background: linear-gradient(45deg,  #9E768F 0%,#9FA4C4 100%);
 }
 
 .front:after{
