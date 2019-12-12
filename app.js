@@ -131,3 +131,7 @@ var divs = $('div[id^="content-"]').hide(),
     i = ++i % divs.length;
 
 })();
+
+
+
+// cards
