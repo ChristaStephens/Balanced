@@ -1,40 +1,3 @@
-
-// const song = document.querySelector(".song");
-// const play = document.querySelector(".play");
-// const replay = document.querySelector(".replay");
-// const outline = document.querySelector(".moving-outline circle");
-// const video = document.querySelector(".vid-container video");
-// //Sounds
-// const sounds = document.querySelectorAll(".sound-picker button");
-// //Time Display
-// const timeDisplay = document.querySelector(".time-display");
-// const outlineLength = outline.getTotalLength();
-// //Duration
-// const timeSelect = document.querySelectorAll(".time-select button");
-// let fakeDuration = 300;
-
-// outline.style.strokeDashoffset = outlineLength;
-// outline.style.strokeDasharray = outlineLength;
-
-//     //play sounds
-//     play.addEventListener('.click', () => {
-//         song.play();
-//     });
-
-//     //Function specific to stop and play sounds
-//     const checkPlaying = song =>{
-//         if (song.paused){
-//         song.play();
-//         play.src = './svg/pause.svg';
-//         }else{
-//             song.pause();
-//             video.pause();
-//             play.src ='./svg/play.svg';
-//         }
-//     }
-
-// real js
-
 const song = document.querySelector(".song");
 const play = document.querySelector(".play");
 // const replay = document.querySelector(".replay");
@@ -76,7 +39,6 @@ play.addEventListener("click", function () {
 const restartSong = song => {
     let currentTime = song.currentTime;
     song.currentTime = 0.0;
-    // console.log("ciao")
 
 }
 
@@ -131,7 +93,3 @@ var divs = $('div[id^="content-"]').hide(),
     i = ++i % divs.length;
 
 })();
-
-
-
-// cards

@@ -47,11 +47,11 @@ input[type="submit"] {
 .description p{
 
   /* margin: 20px 0px; */
-  font-size: 30px;
+  font-size: 40px;
   padding: 40px;
   text-indent: 50px;
-
-
+  color: #d9668c;
+  font-family: 'Dancing Script', cursive;
 }
 
 .button, .carousel{
