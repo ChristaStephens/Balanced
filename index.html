@@ -1,21 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./style.css">
     <link
-        href="https://fonts.googleapis.com/css?family=Crimson+Text|Hepta+Slab|Inconsolata|Lora|Merriweather|Montserrat|Playfair+Display|Poppins&display=swap"
+        href="https://fonts.googleapis.com/css?family=Crimson+Text|Hepta+Slab|Dancing+Script|Inconsolata|Lora|Merriweather|Montserrat|Playfair+Display|Poppins&display=swap"
         rel="stylesheet">
     <title>Balanced</title>
+
+    <!--
+            Authored by: Christa Stephens
+            Date: 12/12/2019
+            Balanced: A Meditation app -->
 </head>
+
 <body>
-    <header>
-        <img src="assets/undraw_mindfulness_scgo.png" alt="woman meditating">
-        <h1>Balanced</h1>
-        <p>meditation for the day</p>
-        <button>Get Started</button>
-    </header>
+
+    <div class="main-image">
+        <img src="assets/Untitled.png" alt="woman meditating" height="450" width="600">
+        <div class="button">
+                <form action="meditation.html">
+                    <input type="submit" value="Get Started" />
+                </form>
+            </div>
+    </div>
+
+    <div class="page-text">
+
+        <div class="description">
+
+            <div class="moon">
+                    <img src="assets/moon.png" alt="moon" height="50" width="50">
+        </div>
+
+            <h1>Balanced</h1>
+            <p>   ...meditation for the day.</p>
+        </div>
+
+        <div class="carousel">
+            <div class="wrapper">
+                <div class="cols">
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container">
+                            <div class="front" style="background-image: url(https://unsplash.it/504/504/)">
+                                <div class="inner">
+                                    <p>Relax</p>
+                                    <span>Meditate daily to ease stress</span>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="inner">
+                                    <p>Meditate by sitting in one place, eyes closed and breathing deeply.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container">
+                            <div class="front" style="background-image: url(https://unsplash.it/505/505/)">
+                                <div class="inner">
+                                    <p>Time</p>
+                                    <span>As little or as much as you need</span>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="inner">
+                                    <p>Meditate for 60 seconds or 60 minutes to stay balanced.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container">
+                            <div class="front" style="background-image: url(https://unsplash.it/506/506/)">
+                                <div class="inner">
+                                    <p>Listen</p>
+                                    <span>Control your mood with sound</span>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="inner">
+                                    <p>Tune into your body while adjusting your frequency with soothing music during meditation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container">
+                            <div class="front" style="background-image: url(https://unsplash.it/508/508/)">
+                                <div class="inner">
+                                    <p>Breathe</p>
+                                    <span>Allow yourself to let go</span>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="inner">
+                                    <p>Take several deep breaths as you ease your shoulders down.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
 </body>
+
 </html>

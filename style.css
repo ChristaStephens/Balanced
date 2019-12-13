@@ -1,67 +1,369 @@
 * {
-    /* background: rgb(202, 175, 202); */
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  /* background: rgb(202, 175, 202); */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Lora', serif;
 }
 
 body {
-    /* height: 100vh; */
-    /* display: flex; */
-    /* justify-content: top; */
-    /* align-items: center; */
-    background-color: white;
-    background-size: cover;
-    font-family: 'Lora', serif;
+  /* height: 100vh; */
+  /* display: flex; */
+  /* justify-content: top; */
+  /* align-items: center; */
+  background-color: white;
+  background-size: cover;
+  font-family: 'Lora', serif;
 }
 
-button {
-    font-family: "Krub", sans-serif;
-  }
+input[type="submit"] {
+  font-family: "Krub", sans-serif;
+}
 
-  header {
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    display: flex;
-    width: 50%;
-    margin-left: 50%;
-  }
+.main-image{
+  float: left;
+  width: 54%;
+  justify-content: center;
+  padding: 70px;
+}
 
-  .header-bg {
+.moon{
+  transform: translate(-50%, 0%);
+  z-index: -2;
+  height: 1px;
+}
+
+
+.description h1{
+  padding: 30px;
+  font-size: 64px;
+  position: absolute;
+  color: #5F0A87;
+}
+
+.description p{
+
+  /* margin: 20px 0px; */
+  font-size: 40px;
+  /* padding: 20px; */
+  text-indent: 50px;
+  color: #d9668c;
+  font-family: 'Dancing Script', cursive;
+}
+
+.button, .carousel{
+  text-align: center;
+  justify-content: space-evenly;
+  padding-left: 100px;
+}
+
+.button{
+  padding-left: 100px;
+  /* align-content: center; */
+}
+
+
+
+@media screen and (max-width: 576px) {
+  .main-image, .button, .wrapper {width: 100%; }
+
+}
+
+
+input[type="submit"] {
+  font-size: 25px;
+  color: #fbfbfb;
+  padding: 15px 25px;
+  background: linear-gradient(to left, #5F0A87, #A4508B);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 20px 0px;
+}
+
+
+
+/* start of meditation app  */
+
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.time-select,
+.sound-picker {
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+.time-select button,
+.sound-picker button {
+  color: white;
+  width: 30%;
+  height: 10%;
+  background: none;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: all 0.5s ease;
+}
+
+.sound-picker button {
+  border: none;
+  height: 100px;
+  width: 100px;
+  padding: 20px;
+  border-radius: 50%;
+}
+.sound-picker button:nth-child(1) {
+  background: #5F0A87;
+}
+.sound-picker button:nth-child(2) {
+  background: #A4508B;
+}
+
+.sound-picker button:nth-child(3) {
+  background: #B91372;
+}
+
+.sound-picker button:nth-child(4) {
+  background: rgb(93, 66, 214);
+}
+
+.sound-picker button img {
+  height: 100%;
+}
+
+.time-select button:hover {
+  background: white;
+  color: #5F0A87;
+}
+
+.player-container {
+  position: relative;
+  height: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.player-container svg {
+  position: absolute;
+  height: 50%;
+  top: 50%;
+  left: 49%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  pointer-events: none;
+}
+.player-container svg circle {
+  transition: all 0.2s ease-in-out;
+}
+.time-display {
+  color: white;
+  position: absolute;
+  font-size: 50px;
+  bottom: 5%;
+}
+
+video {
+  bottom: 0%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  z-index: -10;
+}
+
+
+
+/* carousel */
+
+
+.wrapper{
+  width: 90%;
+  bottom: 60px;
+  margin: 0 auto;
+  max-width: 80rem;
+
+}
+
+.cols{
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.col{
+  width: calc(50% - 2rem);
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.container{
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+	-webkit-perspective: 1000px;
+	        perspective: 1000px;
+}
+
+.front,
+.back{
+  background-size: cover;
+	background-position: center;
+	-webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	-o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+	text-align: center;
+	min-height: 280px;
+	height: auto;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+.back{
+  background: #9E768F;
+  background: -webkit-linear-gradient(45deg,  #9E768F 0%,#9FA4C4 100%);
+  background: -o-linear-gradient(45deg,  #9E768F 0%,#9FA4C4 100%);
+  background: linear-gradient(45deg,  #9E768F 0%,#9FA4C4 100%);
+}
+
+.front:after{
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    opacity: .6;
+    background-color: #000;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-radius: 10px;
+}
+.container:hover .front,
+.container:hover .back{
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.inner{
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+            transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
     position: absolute;
     left: 0;
-    bottom: 0;
     width: 100%;
-    height: 90%;
-    z-index: -2;
-  }
+    padding: 2rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+            perspective: inherit;
+    z-index: 2;
+}
 
-  header p {
-    margin: 50px 0px;
-    font-size: 30px;
-    width: 60%;
-  }
+.container .back{
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
 
-  header h1 {
-    font-size: 64px;
-  }
+.container .front{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
 
-  header button {
-    font-size: 20px;
-    color: #fbfbfb;
-    padding: 15px 25px;
-    background: linear-gradient(to left, #5F0A87, #A4508B);
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-  }
+.container:hover .back{
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
 
-header img {
-    position: absolute;
-    height: 60%;
-    top: 70%;
-    left: 10%;
-    transform: translate(-10%, -70%);
+.container:hover .front{
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.front .inner p{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.front .inner p:after{
+  content: '';
+  width: 4rem;
+  height: 2px;
+  position: absolute;
+  background: #C6D4DF;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -.75rem;
+}
+
+.front .inner span{
+  color: rgba(255,255,255,0.7);
+  font-family: 'Montserrat';
+  font-weight: 300;
+}
+
+@media screen and (max-width: 64rem){
+  .col{
+    width: calc(33.333333% - 2rem);
+  }
+}
+
+@media screen and (max-width: 48rem){
+  .col{
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (max-width: 32rem){
+  .col{
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
 }
