@@ -56,7 +56,9 @@ input[type="submit"] {
 .button, .carousel{
   text-align: center;
   justify-content: space-evenly;
+  padding-left: 100px;
 }
+
 
 
 @media screen and (min-width: 50%) {
