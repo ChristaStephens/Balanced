@@ -1,0 +1,8 @@
+
+Each flip tile on the land page walks you though how to meditate. Click the start button
+to get started with meditating.
+You can start meditating by clicking a time frame and an earth sound, such as ocean
+and you will begin listening to ocean sounds and a rolling ocean background will appear.
+
+This web app was designed to be simple, to take anyone away from the daily life stresses
+and bring balance with breathing.
